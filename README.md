@@ -37,12 +37,50 @@ A modern **Hospital Management System (HMS)** backend built using **FastAPI**, *
 
 ---
 
+📁 Project Structure
+hospital_management/
+├── __pycache__/                    # Auto-generated Python cache files
+
+├── models/                         # SQLAlchemy ORM models (database tables)
+│   ├── patient.py                  # Patient model (name, age, etc.)
+│   ├── doctor.py                   # Doctor model (specialization, etc.)
+│   ├── appointment.py              # Appointment model (patient-doctor bookings)
+│   ├── user.py                     # User model for admin/staff authentication
+│   ├── medical_record.py           # Medical history model for patients
+│   └── __init__.py                 # Makes models a Python package
+
+├── routes/                         # FastAPI route handlers (API endpoints)
+│   ├── patient.py                  # CRUD endpoints for patient
+│   ├── doctor.py                   # CRUD endpoints for doctor
+│   ├── appointment.py              # Endpoints to book/view appointments
+│   ├── user.py                     # Auth routes for admin/staff
+│   ├── medical_record.py           # Endpoints to manage patient records
+│   └── __init__.py                 # Makes routes a Python package
+
+├── schemas/                        # Pydantic models for validation/serialization
+│   ├── patient.py                  # Patient request/response schema
+│   ├── doctor.py                   # Doctor request/response schema
+│   ├── appointment.py              # Appointment schema
+│   ├── user.py                     # User schema (e.g., login data)
+│   ├── medical_record.py           # Schema for medical history
+│   └── __init__.py                 # Makes schemas a Python package
+
+├── database.py                     # SQLAlchemy DB setup using MySQL engine
+
+├── main.py                         # FastAPI application entry point
+
+├── requirements.txt                # All required Python packages
+
+└── README.md                       # Project documentation
+
+
+
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/hospital_management.git
+git clone https://github.com/Sumit-123singh/Hospital-Management-system-using-Fastapi
 cd hospital_management
 
 2. Create virtual environment (optional but recommended)
