@@ -56,7 +56,6 @@ hospital_management/
 
 
 
-
 ## 🧪 Use Cases
 
 | Module           | Functionality                                                                 |
