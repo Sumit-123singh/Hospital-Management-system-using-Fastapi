@@ -23,9 +23,9 @@ A modern **Hospital Management System (HMS)** backend built using **FastAPI**, *
 
 
 hospital_management/
-├── __pycache__/                  # Python bytecode cache (auto-generated)
+├── __pycache__/                 # Python bytecode cache (auto-generated)
 
-├── models/                       # SQLAlchemy ORM models
+├── models/                      # SQLAlchemy ORM models
 │   ├── patient.py
 │   ├── doctor.py
 │   ├── appointment.py
@@ -33,7 +33,7 @@ hospital_management/
 │   ├── medical_record.py
 │   └── __init__.py
 
-├── routes/                       # API route handlers
+├── routes/                      # API route handlers
 │   ├── patient.py
 │   ├── doctor.py
 │   ├── appointment.py
@@ -41,7 +41,7 @@ hospital_management/
 │   ├── medical_record.py
 │   └── __init__.py
 
-├── schemas/                      # Pydantic request/response models
+├── schemas/                     # Pydantic request/response models
 │   ├── patient.py
 │   ├── doctor.py
 │   ├── appointment.py
@@ -49,10 +49,11 @@ hospital_management/
 │   ├── medical_record.py
 │   └── __init__.py
 
-├── database.py                   # SQLAlchemy DB setup (MySQL engine)
-├── main.py                       # FastAPI app entry point
-├── requirements.txt              # All Python dependencies
-└── README.md                     # Project documentation
+├── database.py                  # SQLAlchemy DB setup (MySQL engine)
+├── main.py                      # FastAPI app entry point
+├── requirements.txt             # All Python dependencies
+└── README.md                    # Project documentation
+
 
 
 
