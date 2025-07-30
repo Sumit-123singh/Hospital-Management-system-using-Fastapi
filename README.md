@@ -37,6 +37,31 @@ A modern **Hospital Management System (HMS)** backend built using **FastAPI**, *
 
 ---
 
+## 🛠️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Sumit-123singh/Hospital-Management-system-using-Fastapi
+cd hospital_management
+
+2. Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Set up your database
+Make sure MySQL is running
+Create a database named hospital_db or your preferred name
+Update the DB connection URL in database.py:
+SQLALCHEMY_DATABASE_URL = "mysql+mysqlconnector://username:password@localhost/hospital_db"
+
+5. Run the FastAPI server
+uvicorn main:app --reload
+Visit the docs at 👉 http://localhost:8000/docs
+
 📁 Project Structure
 
 
@@ -75,31 +100,6 @@ hospital_management/
 
 └── README.md                       # Project documentation
 
-
-## 🛠️ Setup Instructions
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Sumit-123singh/Hospital-Management-system-using-Fastapi
-cd hospital_management
-
-2. Create virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-3. Install dependencies
-pip install -r requirements.txt
-
-4. Set up your database
-Make sure MySQL is running
-Create a database named hospital_db or your preferred name
-Update the DB connection URL in database.py:
-SQLALCHEMY_DATABASE_URL = "mysql+mysqlconnector://username:password@localhost/hospital_db"
-
-5. Run the FastAPI server
-uvicorn main:app --reload
-Visit the docs at 👉 http://localhost:8000/docs
 
 
 
