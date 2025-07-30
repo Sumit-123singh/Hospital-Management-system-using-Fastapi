@@ -20,7 +20,7 @@ A modern **Hospital Management System (HMS)** backend built using **FastAPI**, *
 - ✅ Built with **FastAPI** for speed and simplicity  
 - ✅ Follows **clean architecture** with `models`, `schemas`, `routes`
 
----
+
 
 hospital_management/
 ├── __pycache__/                  # Python bytecode cache (auto-generated)
