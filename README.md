@@ -22,39 +22,37 @@ A modern **Hospital Management System (HMS)** backend built using **FastAPI**, *
 
 ---
 
-## 📁 Project Structure
-
 hospital_management/
-├── pycache/ # Python bytecode cache (auto-generated)
-│
-├── models/ # SQLAlchemy ORM models
-│ ├── patient.py
-│ ├── doctor.py
-│ ├── appointment.py
-│ ├── user.py
-│ ├── medical_record.py
-│ └── init.py
-│
-├── routes/ # API route handlers
-│ ├── patient.py
-│ ├── doctor.py
-│ ├── appointment.py
-│ ├── user.py
-│ ├── medical_record.py
-│ └── init.py
-│
-├── schemas/ # Pydantic request/response models
-│ ├── patient.py
-│ ├── doctor.py
-│ ├── appointment.py
-│ ├── user.py
-│ ├── medical_record.py
-│ └── init.py
-│
-├── database.py # SQLAlchemy DB setup (MySQL engine)
-├── main.py # FastAPI app entry point
-├── requirements.txt # All Python dependencies
-└── README.md # You're reading it!
+├── __pycache__/                  # Python bytecode cache (auto-generated)
+
+├── models/                       # SQLAlchemy ORM models
+│   ├── patient.py
+│   ├── doctor.py
+│   ├── appointment.py
+│   ├── user.py
+│   ├── medical_record.py
+│   └── __init__.py
+
+├── routes/                       # API route handlers
+│   ├── patient.py
+│   ├── doctor.py
+│   ├── appointment.py
+│   ├── user.py
+│   ├── medical_record.py
+│   └── __init__.py
+
+├── schemas/                      # Pydantic request/response models
+│   ├── patient.py
+│   ├── doctor.py
+│   ├── appointment.py
+│   ├── user.py
+│   ├── medical_record.py
+│   └── __init__.py
+
+├── database.py                   # SQLAlchemy DB setup (MySQL engine)
+├── main.py                       # FastAPI app entry point
+├── requirements.txt              # All Python dependencies
+└── README.md                     # Project documentation
 
 
 
